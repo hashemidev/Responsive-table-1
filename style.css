@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+table{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-collapse: collapse;
+    width: 800px;
+    height: 200px;
+    border: 1px solid #bdc3c7;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1), -1px -1px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td{
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+.header{
+    background-color: #ff4747;
+    color: #f7fff7;
+    cursor: pointer;
+}
+
+.tr{
+    transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    cursor: pointer;
+}
+.tr:hover{
+    background-color: #ff4747;
+    color: #f7fff7;
+    transform: scale(1.06);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1), -1px -1px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive ==>> Media Query */
+@media only screen and (max-width: 834px){
+    table{
+        width: 90%;
+    }
+    h1{
+        font-size: 48px;
+    }
+}
+@media only screen and (max-width: 536px){
+    table{
+        width: 80%;
+    }
+    h1{
+        font-size: 32px;
+    }
+}
+@media only screen and (max-width: 430px){
+    table{
+        width: 70%;
+        font-size: 12px;
+    }
+    h1{
+        font-size: 24px;
+    }
+}
+@media only screen and (max-width: 380px){
+    table{
+        width: 60%;
+        font-size: 11px;
+    }
+}
